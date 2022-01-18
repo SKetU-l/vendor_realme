@@ -65,6 +65,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libqsocket",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqsocket.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqsocket.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsdm-disp-vndapis",
 	owner: "realme",
 	strip: {
@@ -367,6 +387,15 @@ prebuilt_etc_xml {
 	name: "manifest_android.hardware.drm@1.3-service.widevine",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.gnss@4.0-service",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
