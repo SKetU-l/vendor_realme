@@ -208,6 +208,123 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+dex_import {
+	name: "audiosphere",
+	owner: "realme",
+	jars: ["proprietary/framework/audiosphere.jar"],
+}
+
+dex_import {
+	name: "tcmclient",
+	owner: "realme",
+	jars: ["proprietary/framework/tcmclient.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V1.0-java",
+	owner: "realme",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.0-java",
+	owner: "realme",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.0-java",
+	owner: "realme",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.1-java",
+	owner: "realme",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
+	owner: "realme",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
+	owner: "realme",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.latency-V1.0-java",
+	owner: "realme",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.factory-V1.0-java",
+	owner: "realme",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.factory-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.factory-V1.1-java",
+	owner: "realme",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.factory-V1.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.0-java",
+	owner: "realme",
+	jars: ["proprietary/product/framework/vendor.qti.latency-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "QtiTelephonyServicelibrary",
+	owner: "realme",
+	jars: ["proprietary/system_ext/framework/QtiTelephonyServicelibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "realme",
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "realme",
+	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "realme",
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "realme",
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "vendor.qti.gnss@3.0-service",
 	owner: "realme",
